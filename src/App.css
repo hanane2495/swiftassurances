@@ -1,0 +1,87 @@
+:root {
+    --yellow: linear-gradient(180deg, #97E198 -146.42%, #AEFFAF -46.42%);
+    --orange: #97E198;
+    --black: #242d49;
+    --gray: #788097;
+    --purple: linear-gradient(180deg, #D5BFFF 0%, #E8E9F7 100%);
+    --pink: #07E909;
+    --glass: rgba(255, 255, 255, 0.54);
+    --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --activeItem: #200752;
+  }
+  
+  .DashboardContainer {
+    /* padding: 0.5rem 3.5rem; */
+    background: linear-gradient(
+      106.37deg,
+      #D5BFFF 29.63%,
+      #E8E9F7 51.55%,
+      #BFF4F8 90.85%  
+    );
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+  }
+  
+  .DashboardGlass {
+    display: grid;
+    height: 97%;
+    width: 95%;
+    background: var(--glass);
+    border-radius: 2rem;
+    gap: 16px;
+    grid-template-columns: 15rem auto;
+    overflow: hidden;
+  }
+
+  .nav-icon{
+    width:30px;
+    height:30px;
+    color:#07E909;
+  }
+
+  .Table-title{
+    font-family: 'Raleway';
+    font-weight: 500;
+    margin-top: 10px;
+    color: #888;
+  }
+
+  .material-table-texts:hover{
+     color: #07E909;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .nav-icon{
+      width:20px;
+      height:20px;
+    }
+    .AppGlass{
+      grid-template-columns: 10% 50% auto;
+      overflow-y: scroll;
+    } 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .DashboardGlass {
+      grid-template-columns: 100%;
+    }
+
+    .nav-icon{
+      width:16px;
+      height:16px;
+    }
+    .AppGlass{
+      grid-template-columns: 1fr;
+    } 
+
+    .Table-title{
+      font-size: 1.2rem;
+    }
+  }
+
+  
+  
